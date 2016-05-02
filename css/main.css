@@ -1,5 +1,176 @@
 /* Enter CSS below */
 
+
+/* Blue #0084ff */
+
+
 #content {
-	margin-top: 100px;
+	margin-top: 150px;
+}
+
+.section-divider {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/********** Navbar **********/
+
+#nav-happy {
+  height: 45px;
+  margin-top: -10px;
+}
+
+.brand {
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+}
+
+.navbar-header {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 10px 0 13px 0;
+}
+
+.navbar-nav>li>a {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+@media(max-width:767px) {
+  .navbar-default .navbar-nav>li>a {
+    color: #0084FF;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 30px 0;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    color: #0084FF;
+  }
+}
+
+/* Navbar Hamburger Toggle */
+.navbar-toggle {
+  padding-top: 15px;
+  padding-bottom: 0;  
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+/********** About **********/
+
+#about p {
+  font-size: 20px;
+}
+
+/********** Price Cards **********/
+
+.price-card {
+  background-color: #F8F8F8;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  min-height: 400px;
+  padding: 0;
+  text-align: center;
+}
+
+.price-card .price {
+  background: white;
+  min-height: 150px;
+  /*border-radius: 3px 3px 350px 350px;*/
+  padding: 0;
+}
+
+.price-face {
+  height: 80px;
+  margin-top: -40px;
+  background: white;
+  padding: 10px;
+  border-radius: 100%;
+  border: 1px solid #E1E1E1;
+}
+
+.price-card .time {
+  margin-top: 30px;
+  height: 70px;
+}
+
+.price-perks {
+  padding: 25px 10px;
+}
+
+@media (min-width: 992px) {
+  .col-md-offset-1 {
+      margin-left: 6.333333%;
+  }
+}
+
+/*.price-card .btn-success {
+    margin: 100px 0 0 0 ;
+    color: #fff;
+    background-color: #54c95e;
+    border: none;
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.price-card .btn-primary {
+    margin: 120px 0 0 0 ;
+    color: #fff;
+    background-color: #0084FF;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;    
+}*/
+
+/********** Extra **********/
+
+.hop {
+  -o-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.hop:hover {
+  -o-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  transform: rotate(360deg);
+  padding-left: 25px;
+
 }
